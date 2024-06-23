@@ -36,12 +36,9 @@ struct Board {
 
 /*
 Position loading
-Args: Forsyth–Edwards Notation of chess board: &str
-Return: Board struct
 
 Encodes every location of piece type in u64 integer (since board have 64 squares)
 1 means there is a piece, 0 it is not.
-
 */
 fn load_position(fen:&str) -> Board {
 
