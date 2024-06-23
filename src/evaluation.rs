@@ -22,11 +22,11 @@ Works by creating quadratic function with arms down (times -1.0) for each color 
 x: the best position on the board encoded in i64 and shrunk to decimal (d4 and e5 for black; e4 and d5 for white in case of knights)
 y: 100.0 is the reward for the best position on board possible
 
-Since its quadratic im further away the number is from the best one the lower the value.
+Since its quadratic the further away the number is from the best one the lower the value.
 
 Good enough for knights and king
 
-returns white reward - black reward rounded to 2 digits
+returns (white reward - black reward) rounded up to 2 digits
 */
 
 fn piece_position_quadratic(pieces_white: &u64, pieces_black: &u64, optimal_white: &u64, optimal_black: &u64) -> f32 {
